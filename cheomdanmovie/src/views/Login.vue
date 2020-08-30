@@ -33,6 +33,7 @@
                                 </base-button>
                             </div>
                         </template>
+                        
                         <template>
                             <div class="text-center text-muted mb-4">
                                 <small>Or sign in with credentials</small>
@@ -40,7 +41,7 @@
                             <form role="form">
                                 <base-input alternative
                                             class="mb-3"
-                                            placeholder="Email"
+                                            placeholder="Id"
                                             addon-left-icon="ni ni-email-83">
                                 </base-input>
                                 <base-input alternative
@@ -75,7 +76,37 @@
     </section>
 </template>
 <script>
-export default {};
+export default {
+    data() {
+        return {
+            form: {
+                id: '',
+                password: ''
+            }
+        }
+    },
+    methods: {
+        onSubmit(evt) {
+            evt.preventDefault()
+            alert(JSON.stringify(this.form))
+        },
+        onReset(evt) {
+            evt.preventDefault()
+            // Reset our form values
+            this.form.id = ''
+            this.form.password = ''
+            this.form.food = null
+            this.show = false
+            this.$nextTick(() => {
+                this.show = true
+            })
+      },
+      test() {
+          console.log(this.form.id)
+          console.log(this.form.password)
+      }
+    }
+};
 </script>
 <style>
 </style>

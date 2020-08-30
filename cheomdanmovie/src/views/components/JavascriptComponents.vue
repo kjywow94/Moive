@@ -19,7 +19,9 @@
                                     class="ni ni-cloud-download-95"></i></span>
                         </tab-pane>
                     </tabs>
+                    
                 </div>
+                
                 <div class="col-lg-5">
                     <h3 class="h4 text-success font-weight-bold mb-5">Labels</h3>
                     <badge type="primary" class="text-uppercase">Primary</badge>
