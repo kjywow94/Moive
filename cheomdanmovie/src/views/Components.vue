@@ -38,5 +38,6 @@ export default {
     Examples,
     DownloadSection
   }
+
 };
 </script>

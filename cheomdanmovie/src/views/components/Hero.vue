@@ -14,27 +14,23 @@
         </div>
         <div class="container shape-container d-flex align-items-center">
             <div class="col px-0">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-7 text-center pt-lg">
-                        <img src="img/brand/white.png" style="width: 200px;" class="img-fluid">
-                        <p class="lead text-white mt-4 mb-5">A beautiful Design System for Bootstrap 4. It's Free and Open Source.</p>
-                        <div class="btn-wrapper">
-                            <base-button tag="a"
-                                         href="https://demos.creative-tim.com/vue-argon-design-system/documentation"
-                                         class="mb-3 mb-sm-0"
-                                         type="info"
-                                         icon="fa fa-code">
-                                Components
-                            </base-button>
-                            <base-button tag="a"
-                                         href="https://www.creative-tim.com/product/vue-argon-design-system"
-                                         class="mb-3 mb-sm-0"
-                                         type="white"
-                                         icon="ni ni-cloud-download-95">
-                                Download Vue
-                            </base-button>
-                        </div>
-                    </div>
+                
+  <b-dropdown id="dropdown-1" text="지역별" class="m-md-2">
+    <b-dropdown-item><router-link to="/test" title="Profile Page">First Action</router-link></b-dropdown-item>
+    <b-dropdown-item>Second Action</b-dropdown-item>
+    <b-dropdown-item>Third Action</b-dropdown-item>
+    
+  </b-dropdown>
+  <b-dropdown id="dropdown-2" text="Dropdown Button" class="m-md-2">
+    <b-dropdown-item>First Action</b-dropdown-item>
+    <b-dropdown-item>Second Action</b-dropdown-item>
+    <b-dropdown-item>Third Action</b-dropdown-item>
+    <b-dropdown-divider></b-dropdown-divider>
+    <b-dropdown-item active>Active action</b-dropdown-item>
+    <b-dropdown-item disabled>Disabled action</b-dropdown-item>
+
+  </b-dropdown>
+</div>
                 </div>
                 <div class="row align-items-center justify-content-around stars-and-coded">
                     <div class="col-sm-4">
@@ -50,8 +46,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
+         
     </section>
 </template>
 <script>

@@ -20,7 +20,7 @@
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">Components</span>
+                        <span class="nav-link-inner--text">지역별</span>
                     </a>
                     <div class="dropdown-menu-inner">
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
@@ -34,6 +34,7 @@
                                     world's most popular framework for building responsive sites.</p>
                             </div>
                         </a>
+                        
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
                            class="media d-flex align-items-center">
                             <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
@@ -97,6 +98,7 @@
                     </a>
                 </li>
             </ul>
+            
         </base-nav>
     </header>
 </template>
