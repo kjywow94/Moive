@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <br>
                     <br>
-                    <b-dropdown id="dropdown-1" text="Dropdown Button" class="m-md-2">
+                    <b-dropdown id="dropdown-1" text="충청북도" class="m-md-2">
                         <b-dropdown-item>First Action</b-dropdown-item>
                         <b-dropdown-item>Second Action</b-dropdown-item>
                         <b-dropdown-item>Third Action</b-dropdown-item>
