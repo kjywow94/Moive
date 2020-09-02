@@ -7,23 +7,24 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
-import SSS from "./지역별/서울시.vue";
-import GGD from "./지역별/경기도.vue";
-import GWD from "./지역별/강원도.vue";
-import CCBD from "./지역별/충청북도.vue";
-import CCND from "./지역별/충청남도.vue";
-import GSBD from "./지역별/경상북도.vue";
-import GSND from "./지역별/경상남도.vue";
-import JRBD from "./지역별/전라북도.vue";
-import JRND from "./지역별/전라남도.vue";
-import JJD from "./지역별/제주도.vue";
-import BSS from "./지역별/부산시.vue";
-import DGS from "./지역별/대구시.vue";
-import DJS from "./지역별/대전시.vue";
-import WSS from "./지역별/울산시.vue";
-import ICS from "./지역별/인천시.vue";
-import GJS from "./지역별/광주시.vue";
-import SJS from "./지역별/세종시.vue";
+import Home from "./views/Home.vue";
+import SSS from "./region/SSS.vue";
+import GGD from "./region/GGD.vue";
+import GWD from "./region/GWD.vue";
+import CCBD from "./region/CCBD.vue";
+import CCND from "./region/CCND.vue";
+import GSBD from "./region/GSBD.vue";
+import GSND from "./region/GSND.vue";
+import JRBD from "./region/JRBD.vue";
+import JRND from "./region/JRND.vue";
+import JJD from "./region/JJD.vue";
+import BSS from "./region/BSS.vue";
+import DGS from "./region/DGS.vue";
+import DJS from "./region/DJS.vue";
+import WSS from "./region/WSS.vue";
+import ICS from "./region/ICS.vue";
+import GJS from "./region/GJS.vue";
+import SJS from "./region/SJS.vue";
 
 
 Vue.use(Router);
@@ -32,6 +33,15 @@ export default new Router({
     linkExactActiveClass: "active",
     routes: [{
             path: "/",
+            name: "home",
+            components: {
+                header: AppHeader,
+                default: Home,
+                footer: AppFooter
+            }
+        },
+        {
+            path: "/components",
             name: "components",
             components: {
                 header: AppHeader,
@@ -76,8 +86,8 @@ export default new Router({
             }
         },
         {
-            path: "/서울시",
-            name: "서울시",
+            path: "/SSS",
+            name: "SSS",
             components: {
                 header: AppHeader,
                 default: SSS,
@@ -85,8 +95,8 @@ export default new Router({
             }
         },
         {
-            path: "/경기도",
-            name: "경기도",
+            path: "/GGD",
+            name: "GGD",
             components: {
                 header: AppHeader,
                 default: GGD,
@@ -94,8 +104,8 @@ export default new Router({
             }
         },
         {
-            path: "/강원도",
-            name: "강원도",
+            path: "/GWD",
+            name: "GWD",
             components: {
                 header: AppHeader,
                 default: GWD,
@@ -103,8 +113,8 @@ export default new Router({
             }
         },
         {
-            path: "/충청북도",
-            name: "충청북도",
+            path: "/CCBD",
+            name: "CCBD",
             components: {
                 header: AppHeader,
                 default: CCBD,
@@ -112,8 +122,8 @@ export default new Router({
             }
         },
         {
-            path: "/충청남도",
-            name: "충청남도",
+            path: "/CCND",
+            name: "CCND",
             components: {
                 header: AppHeader,
                 default: CCND,
@@ -121,8 +131,8 @@ export default new Router({
             }
         },
         {
-            path: "/경상북도",
-            name: "경상북도",
+            path: "/GGBD",
+            name: "GGBD",
             components: {
                 header: AppHeader,
                 default: GSBD,
@@ -130,8 +140,8 @@ export default new Router({
             }
         },
         {
-            path: "/경상남도",
-            name: "경상남도",
+            path: "/GSND",
+            name: "GSND",
             components: {
                 header: AppHeader,
                 default: GSND,
@@ -139,8 +149,8 @@ export default new Router({
             }
         },
         {
-            path: "/전라북도",
-            name: "전라북도",
+            path: "/JRBD",
+            name: "JRBD",
             components: {
                 header: AppHeader,
                 default: JRBD,
@@ -148,8 +158,8 @@ export default new Router({
             }
         },
         {
-            path: "/전라남도",
-            name: "전라남도",
+            path: "/JRND",
+            name: "JRND",
             components: {
                 header: AppHeader,
                 default: JRND,
@@ -157,8 +167,8 @@ export default new Router({
             }
         },
         {
-            path: "/제주도",
-            name: "제주도",
+            path: "/JJD",
+            name: "JJD",
             components: {
                 header: AppHeader,
                 default: JJD,
@@ -166,8 +176,8 @@ export default new Router({
             }
         },
         {
-            path: "/부산시",
-            name: "부산시",
+            path: "/BSS",
+            name: "BSS",
             components: {
                 header: AppHeader,
                 default: BSS,
@@ -175,8 +185,8 @@ export default new Router({
             }
         },
         {
-            path: "/대구시",
-            name: "대구시",
+            path: "/DGS",
+            name: "DGS",
             components: {
                 header: AppHeader,
                 default: DGS,
@@ -184,8 +194,8 @@ export default new Router({
             }
         },
         {
-            path: "/대전시",
-            name: "대전시",
+            path: "/DJS",
+            name: "DJS",
             components: {
                 header: AppHeader,
                 default: DJS,
@@ -193,8 +203,8 @@ export default new Router({
             }
         },
         {
-            path: "/울산시",
-            name: "울산시",
+            path: "/WSS",
+            name: "WSS",
             components: {
                 header: AppHeader,
                 default: WSS,
@@ -202,8 +212,8 @@ export default new Router({
             }
         },
         {
-            path: "/인천시",
-            name: "인천시",
+            path: "/ICS",
+            name: "ICS",
             components: {
                 header: AppHeader,
                 default: ICS,
@@ -211,8 +221,8 @@ export default new Router({
             }
         },
         {
-            path: "/광주시",
-            name: "광주시",
+            path: "/GJS",
+            name: "GJS",
             components: {
                 header: AppHeader,
                 default: GJS,
@@ -220,8 +230,8 @@ export default new Router({
             }
         },
         {
-            path: "/세종시",
-            name: "세종시",
+            path: "/SJS",
+            name: "SJS",
             components: {
                 header: AppHeader,
                 default: SJS,

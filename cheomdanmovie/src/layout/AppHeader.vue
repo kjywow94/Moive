@@ -20,7 +20,7 @@
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
-                        <span class="nav-link-inner--text">지역별</span>
+                        <span class="nav-link-inner--text">exam</span>
                     </a>
                     <div class="dropdown-menu-inner">
                         <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/"
@@ -53,12 +53,36 @@
                         <i class="ni ni-collection d-lg-none"></i>
                         <span class="nav-link-inner--text">Examples</span>
                     </a>
-                    <router-link to="/landing" class="dropdown-item">Landing</router-link>
-                    <router-link to="/profile" class="dropdown-item">Profile</router-link>
-                    <router-link to="/login" class="dropdown-item">Login</router-link>
-                    <router-link to="/register" class="dropdown-item">Register</router-link>
+                    <router-link to="/components" class="dropdown-item" title="Profile Page">컴포즈</router-link>
+                    <router-link to="/SSS" class="dropdown-item" title="Profile Page">서울시</router-link>
+                    <router-link to="/GGD" class="dropdown-item" title="Profile Page">경기도</router-link>
+                    <router-link to="/GWD" class="dropdown-item" title="Profile Page">강원도</router-link>
+                    <router-link to="/CCBD" class="dropdown-item" title="Profile Page">충청북도</router-link>
+                    <router-link to="/CCND" class="dropdown-item" title="Profile Page">충청남도</router-link>
+                    <router-link to="/GSBD" class="dropdown-item" title="Profile Page">경상북도</router-link>
+                    <router-link to="/GSND" class="dropdown-item" title="Profile Page">경상남도</router-link>
+                    <router-link to="/JRBD" class="dropdown-item" title="Profile Page">전라북도</router-link>
+                    <router-link to="/JRND" class="dropdown-item" title="Profile Page">전라남도</router-link>
+                    <router-link to="/JJD" class="dropdown-item" title="Profile Page">제주도</router-link>
+                    <router-link to="/BSS" class="dropdown-item" title="Profile Page">부산시</router-link>
+                    <router-link to="/DGS" class="dropdown-item" title="Profile Page">대구시</router-link>
+                    <router-link to="/DJS" class="dropdown-item" title="Profile Page">대전시</router-link>
+                    <router-link to="/WSS" class="dropdown-item" title="Profile Page">울산시</router-link>
+                    <router-link to="/ICS" class="dropdown-item" title="Profile Page">인천시</router-link>
+                    <router-link to="/GJS" class="dropdown-item" title="Profile Page">광주시</router-link>
+                    <router-link to="/SJS" class="dropdown-item" title="Profile Page">세종시</router-link>
                 </base-dropdown>
             </ul>
+
+            <div class="col-sm">
+                    <div align="right">
+                      <div class="col-lg-4 col-sm-6">
+                        <base-input placeholder="Search"
+                                    addon-left-icon="ni ni-zoom-split-in">
+                        </base-input>
+                      </div>
+                    </div>
+            </div>
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item">
                     <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" rel="noopener"
@@ -88,16 +112,9 @@
                         <span class="nav-link-inner--text d-lg-none">Github</span>
                     </a>
                 </li>
-                <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank" rel="noopener"
-                       class="btn btn-neutral btn-icon">
-                <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
-                </span>
-                        <span class="nav-link-inner--text">Download</span>
-                    </a>
-                </li>
             </ul>
+
+            
             
         </base-nav>
     </header>
