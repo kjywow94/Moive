@@ -1,17 +1,17 @@
 <template>
     <header class="header-global">
-        <base-nav class="navbar-main" transparent type="" effect="light" expand>
-            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
-                <img src="img/brand/white.png" alt="logo">
+        <base-nav class="navbar-main" transparent type="default" effect="light" expand>
+            <router-link slot="brand" class="navbar-brand mr-lg-5" to="/" style="float:right;">
+                <img src="img/brand/white.png" alt="logo" >
             </router-link>
 
-            <div class="row" slot="content-header" slot-scope="{closeMenu}">
-                <div class="col-6 collapse-brand">
+            <div class="container" slot="content-header" slot-scope="{closeMenu}" >
+                <div class="col-xs-6">
                     <a href="https://demos.creative-tim.com/vue-argon-design-system/documentation/">
                         <img src="img/brand/blue.png">
                     </a>
                 </div>
-                <div class="col-6 collapse-close">
+                <div class="col-xs-6">
                     <close-button @click="closeMenu"></close-button>
                 </div>
             </div>
@@ -49,11 +49,11 @@
                     </div>
                 </base-dropdown>
                 <base-dropdown tag="li" class="nav-item">
-                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
+                    <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button" >
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">Examples</span>
+                        <span class="nav-link-inner--text" >지역별</span>
                     </a>
-                    <router-link to="/components" class="dropdown-item" title="Profile Page">컴포즈</router-link>
+                    
                     <router-link to="/SSS" class="dropdown-item" title="Profile Page">서울시</router-link>
                     <router-link to="/GGD" class="dropdown-item" title="Profile Page">경기도</router-link>
                     <router-link to="/GWD" class="dropdown-item" title="Profile Page">강원도</router-link>
